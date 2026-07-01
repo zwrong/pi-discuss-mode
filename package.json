@@ -1,0 +1,18 @@
+{
+  "name": "pi-discuss-mode",
+  "version": "1.0.0",
+  "description": "Pi Coding Agent extension — read-only discussion mode for code review and safe exploration",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.9"
+  },
+  "keywords": ["pi", "pi-package", "coding-agent", "discuss-mode", "read-only"],
+  "license": "MIT",
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
