@@ -1,4 +1,6 @@
-[![](assets/logo.png)] pi-discuss-mode — Safety Without the Planning
+<img src="assets/logo.png" width="40" align="left" style="margin-right: 12px;"> 
+
+# pi-discuss-mode — Safety Without the Planning
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-6C5CE7?style=flat-square">
