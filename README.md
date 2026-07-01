@@ -1,6 +1,4 @@
-<img src="assets/logo.png" width="40" align="left" style="margin-right: 12px;"> 
-
-# pi-discuss-mode — Safety Without the Planning
+<h1 align="center"><img src="assets/logo.png" alt="" width="64" style="vertical-align: middle;">&nbsp; pi-discuss-mode — Safety Without the Planning</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-6C5CE7?style=flat-square">
@@ -9,8 +7,8 @@
 </p>
 
 <p align="center">
-  A read-only discussion mode for code review, architecture analysis, and safe exploration.<br>
-  Toggle it on — edits are blocked, bash is restricted, and your code stays untouched.
+  <strong>A read-only discussion mode for code review, architecture analysis, and safe exploration.<br>
+  Toggle it on — edits are blocked, bash is restricted, and your code stays untouched.</strong>
 </p>
 
 ---
