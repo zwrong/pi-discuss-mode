@@ -1,4 +1,9 @@
-<h1 align="center"><img src="assets/logo.png" alt="" width="64" style="vertical-align: middle;">&nbsp; pi-discuss-mode — Safety Without the Planning</h1>
+<p align="center">
+  <img src="assets/logo.png" alt="" width="94">
+</p>
+
+
+<h1 align="center">pi-discuss-mode — Safety Without the Planning</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0.0-6C5CE7?style=flat-square">
