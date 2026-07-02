@@ -63,6 +63,12 @@ pi install npm:pi-discuss-mode
 
 Once discuss mode is active:
 
+<p align="center">
+  <img src="assets/discuss-mode-on.png" width="80%">
+  <br>
+  <em>Pi startup with discuss mode ON — status bar shows 💬 discuss indicator</em>
+</p>
+
 - ✅ **Read** files freely
 - ✅ **Bash** only safe commands (`cat`, `grep`, `ls`, `git status`, `curl`, etc.)
 - ❌ **Edit / Write** tools — blocked with a clear error message
@@ -97,6 +103,12 @@ Discuss Mode uses a **two-layer safety design**:
 **Layer 2** — `tool_call` hook acts as a real-time safety net that's always on. Even if the LLM ignores the system message (or a different model is used mid-session), the tool call is intercepted before any damage is done.
 
 ## 🔒 Safe Command Policy
+
+<p align="center">
+  <img src="assets/discuss-mode-blocked.png" width="80%">
+  <br>
+  <em>Attempting to write a file — blocked with a clear error message</em>
+</p>
 
 ### ✅ Allowed (read-only)
 
