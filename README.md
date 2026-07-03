@@ -18,6 +18,12 @@
 
 ---
 
+## Watch the Demo
+
+If you want the fastest way to understand `pi-discuss-mode`, start with this short demo.
+
+https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036
+
 ## 💡 Why pi-discuss-mode?
 
 I use Claude Code's **plan mode** a lot. Not because I need to make plans — but because it gives me **safety**. It won't write files, won't edit code, won't `rm -rf` anything, and won't `git push` without asking. I can just talk to the AI and know nothing bad will happen.
@@ -33,6 +39,8 @@ That's where **discuss mode** comes from.
 | Changes will follow | Nothing will change |
 
 Discuss mode is plan mode's **safety without the planning**. One toggle, same protection.
+
+Special thanks to the Pi team for the [`plan-mode` example](https://github.com/earendil-works/pi/tree/main/packages/coding-agent/examples/extensions/plan-mode), which this extension is built on top of. The bash allowlist and blocklist are directly reused from plan mode so discuss mode keeps the same permission boundary while removing the planning workflow.
 
 ## 🎯 Start Here
 
