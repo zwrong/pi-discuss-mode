@@ -8,12 +8,26 @@
   "scripts": {
     "test": "vitest run"
   },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
   "devDependencies": {
     "vitest": "^4.1.9"
   },
   "keywords": ["pi", "pi-package", "coding-agent", "discuss-mode", "read-only"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zwrong/pi-discuss-mode.git"
+  },
+  "homepage": "https://github.com/zwrong/pi-discuss-mode",
+  "bugs": {
+    "url": "https://github.com/zwrong/pi-discuss-mode/issues"
+  },
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": ["./index.ts"],
+    "image": "https://raw.githubusercontent.com/zwrong/pi-discuss-mode/main/assets/logo.png",
+    "video": "https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036"
   }
 }

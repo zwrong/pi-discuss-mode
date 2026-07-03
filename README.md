@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="" width="94">
+  <img src="https://raw.githubusercontent.com/zwrong/pi-discuss-mode/main/assets/logo.png" alt="" width="94">
 </p>
 
 
@@ -72,7 +72,7 @@ pi install npm:pi-discuss-mode
 Once discuss mode is active:
 
 <p align="center">
-  <img src="assets/discuss-mode-on.png" width="80%">
+  <img src="https://raw.githubusercontent.com/zwrong/pi-discuss-mode/main/assets/discuss-mode-on.png" width="80%">
   <br>
   <em>Pi startup with discuss mode ON — status bar shows 💬 discuss indicator</em>
 </p>
@@ -113,7 +113,7 @@ Discuss Mode uses a **two-layer safety design**:
 ## 🔒 Safe Command Policy
 
 <p align="center">
-  <img src="assets/discuss-mode-blocked.png" width="80%">
+  <img src="https://raw.githubusercontent.com/zwrong/pi-discuss-mode/main/assets/discuss-mode-blocked.png" width="80%">
   <br>
   <em>Attempting to write a file — blocked with a clear error message</em>
 </p>
