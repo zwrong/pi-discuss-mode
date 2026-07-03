@@ -149,6 +149,23 @@ vim, nano, code, subl                # Interactive editors
 - **Leading whitespace** (`  cat file.txt`) — correctly recognized as safe
 - **Empty input** — always blocked
 
+## 🧭 Limitations & Future Direction
+
+### Current Limitation
+
+Discuss mode does not yet match Claude Code's plan mode permission model exactly. Some commands that are safe in practice are still restricted, which can make it harder for the agent to smoothly explore a codebase during discussion.
+
+### Possible Improvements
+
+1. **Refine the allowlist and blocklist** — enumerate harmful commands more carefully and use regular expressions to match dangerous patterns with better precision.
+2. **Blend auto mode with discuss mode** — let discuss mode run exploratory commands or small local experiments when they are safe, instead of blocking execution completely.
+
+### Musing
+
+Whether it is ask mode, plan mode, auto mode, or discuss mode, these modes are an important part of the harness experience. The key question is how to design a mode that pauses exactly where the user may feel concerned, while allowing commands the user considers safe.
+
+Over time, this should become part of the harness's self-evolution: learning user preferences through repeated coding-agent use. The end state may be a single adaptive mode where the harness remembers the user's preferences, keeps discussion as discussion without forcing a plan, and asks for confirmation only when a command is truly sensitive.
+
 ## 🧪 Development
 
 ```bash
