@@ -40,7 +40,7 @@ That's where **discuss mode** comes from.
 
 Discuss mode is plan mode's **safety without the planning**. One toggle, same protection.
 
-Special thanks to the Pi team for the [`plan-mode` example](https://github.com/earendil-works/pi/tree/main/packages/coding-agent/examples/extensions/plan-mode), which this extension is built on top of. The bash allowlist and blocklist are directly reused from plan mode so discuss mode keeps the same permission boundary while removing the planning workflow.
+Special thanks to the Pi team for the [plan-mode example](https://github.com/earendil-works/pi/tree/main/packages/coding-agent/examples/extensions/plan-mode), which this extension is built on top of. The bash allowlist and blocklist are directly reused from plan mode so discuss mode keeps the same permission boundary while removing the planning workflow.
 
 ## 🎯 Start Here
 
