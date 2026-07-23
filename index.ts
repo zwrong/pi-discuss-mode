@@ -6,7 +6,7 @@
  *
  * Features:
  * - /discuss command or Ctrl+Alt+D to toggle
- * - before_agent_start injects system message (only on mode switch)
+ * - before_agent_start injects a one-shot context message (only on mode switch)
  * - tool_call interception as safety net (always active)
  * - Bash restricted to allowlisted read-only commands
  */
@@ -105,14 +105,14 @@ export default function discussModeExtension(pi: ExtensionAPI): void {
     handler: async (ctx) => toggleDiscussMode(ctx),
   });
 
-  // ── Layer 1: before_agent_start — inject system message (only on switch) ──
+  // ── Layer 1: before_agent_start — one-shot context cue (only on switch) ──
+  // Cue the model at the end of the conversation so the prompt cache is unaffected.
 
   pi.on("before_agent_start", async () => {
     if (pendingEnterMessage) {
       pendingEnterMessage = false;
       return {
         message: {
-          role: "system",
           customType: "discuss-mode-context",
           content: DISCUSS_MODE_ENTER_PROMPT,
           display: false,
@@ -124,7 +124,6 @@ export default function discussModeExtension(pi: ExtensionAPI): void {
       pendingExitMessage = false;
       return {
         message: {
-          role: "system",
           customType: "discuss-mode-context",
           content: DISCUSS_MODE_EXIT_PROMPT,
           display: false,
