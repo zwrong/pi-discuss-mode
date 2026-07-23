@@ -71,3 +71,31 @@ test("whitespace-only should NOT be allowed", () => {
 test("command with leading whitespace should still match safe patterns", () => {
   expect(isSafeCommand("  cat file.txt")).toBe(true);
 });
+
+// === fd 重定向（应该放行）===
+
+test("ls -la /var/run 2>/dev/null should be allowed", () => {
+  // stderr redirect to /dev/null is read-only
+  expect(isSafeCommand("ls -la /var/run 2>/dev/null")).toBe(true);
+});
+
+test("find / -name x -maxdepth 4 2>/dev/null should be allowed", () => {
+  expect(isSafeCommand("find / -name x -maxdepth 4 2>/dev/null")).toBe(true);
+});
+
+test("ls 2>&1 should be allowed", () => {
+  // stderr merged into stdout is not a file write
+  expect(isSafeCommand("ls 2>&1")).toBe(true);
+});
+
+// === 真实文件写入（仍然应该拦截）===
+
+test("echo x > /tmp/a.txt should NOT be allowed", () => {
+  // regression: real file write still blocked
+  expect(isSafeCommand("echo x > /tmp/a.txt")).toBe(false);
+});
+
+test("ls > out.txt should NOT be allowed", () => {
+  // regression: file redirect still blocked
+  expect(isSafeCommand("ls > out.txt")).toBe(false);
+});
